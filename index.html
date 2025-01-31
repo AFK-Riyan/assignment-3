@@ -11,8 +11,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/478aca7085.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+      
     <style>
         .prm-font {
             font-family: "Sora", serif;
@@ -23,13 +22,28 @@
         }
 
         @keyframes fadeInScale {
-            0% { opacity: 0.5; transform: scale(0.9); }
-            50% { opacity: 1; transform: scale(1); }
-            100% { opacity: 0.5; transform: scale(0.9); }
+            0% {
+                opacity: 0.5;
+                transform: scale(0.9);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            100% {
+                opacity: 0.5;
+                transform: scale(0.9);
+            }
         }
+
         .animate-fadeInScale {
-            animation: fadeInScale 3s ease-in-out infinite;}
+            animation: fadeInScale 3s ease-in-out infinite;
+        }
     </style>
+
+
 </head>
 
 <body class="prm-font text-[#111111]">
@@ -65,7 +79,8 @@
         <section class="w-11/12 mx-auto">
             <div>
                 <div class=" space-y-5 -mb-[100px] md:-mb-[200px] lg:-mb-[300px] mt-10 md:mt-28 absolute">
-                    <h1 class=" text-3xl w-[80%] lg:text-6xl sec-font lg:w-[50%] animate-fadeInScale">Pamper Your Pet, Because They Deserve
+                    <h1 class=" text-3xl w-[80%] lg:text-6xl sec-font lg:w-[50%] animate-fadeInScale">Pamper Your Pet,
+                        Because They Deserve
                         the Bes.</h1>
                     <p class="w-[80%] lg:w-[50%] mt-4">Discover a world of treats, toys, and essentials handpicked for
                         your furry friends. Shop now and make tails wag with joy!</p>
@@ -283,10 +298,34 @@
             </div>
         </section>
         <!-- Low Price Section -->
-        <section class="w-11/12 mx-auto mt-36">
+        <section class="w-11/12 mx-auto mb-36 mt-20">
+            <h3 class="mb-8 text-2xl xl:text-4xl lg:mb-12 sec-font">Everyday low Price</h3>
+            <div class="grid lg:grid-cols-[2fr_1fr] gap-6">
+                <div
+                    class="flex flex-col lg:items-center lg:flex-row bg-gradient-to-br from-[#F8CCFB] to-[#ACD2FD] rounded-xl">
+                    <div class="ml-16 mt-10 -mb-14 lg:mt-0 lg:ml-5 lg:-mb-0 lg:text-center">
+                        <p class="text-xl mb-4 hidden lg:block">Under Price</p>
+                        <h4 class="text-xl lg:text-4xl sec-font">Pet Grooming Mitt</h4>
+                        <p class="sec-font hidden lg:block text-2xl text-white">(Easy Hair Removal)</p>
+                        <h3 class="text-white text-4xl sec-font lg:text-[#111111]">$7.99</h3>
+                    </div>
+                    <div class=" flex items-center justify-end md:justify-center">
+                        <img src="assets/cute-dog-mid.png" alt="" class="max-sm:w-[210px] max-sm:h-[265px]">
+                    </div>
+                </div>
 
-            
+                <div class="bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] rounded-xl">
+                    <div class="ml-10 lg:ml-4 xl:ml-10 mt-12 -mb-10">
+                        <h3 class=" text-2xl lg:text-4xl sec-font">T-Shirt for Dogs</h3>
+                        <h2 class="text-4xl lg:text-5xl sec-font">$7.99</h2>
+                    </div>
+                    <div class="flex justify-end">
+                        <img src="assets/cute-pet-mid.png" alt="" class=" max-sm:w-[210px] max-sm:h-[210px]">
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
         <!-- Customer Review (Extra Section) -->
         <section class="w-11/12 mx-auto mt-36 -mb-60 md:-mb-28">
             <h2 class="text-3xl font-[600] mb-8 sec-font">Customer Reviews</h2>
@@ -344,7 +383,7 @@
         <!-- Get Grocery News! -->
         <section>
             <div class="w-11/12 mx-auto">
-                <div class="rounded-xl bg-[#FFF9F4]  translate-y-1/4">
+                <div class="rounded-xl bg-[#FFF9F4]  translate-y-1/2">
                     <div class="grid md:grid-cols-2">
                         <div class=" md:pb-20">
                             <img class=" w-80 ml-22 md:ml-0." src="assets/cute-pet-small.png" alt="">
